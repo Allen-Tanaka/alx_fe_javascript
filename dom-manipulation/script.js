@@ -159,7 +159,7 @@ async function syncQuotes() {
     populateCategories();
     filterQuotes();
 
-    syncStatus.textContent = "✔ Synced with server (server version applied)";
+    syncStatus.textContent = "Quotes synced with server!";
     setTimeout(() => (syncStatus.textContent = ""), 3000);
   } catch (error) {
     syncStatus.textContent = "⚠ Sync failed";
